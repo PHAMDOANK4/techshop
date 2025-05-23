@@ -31,4 +31,6 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 @Query("SELECT u.id, u.name, u.dateOfBirth, u.email, u.phone, u.address, r.name, u.isActive, u.createdAt " +
            "FROM User u JOIN u.role r WHERE u.id = :id")
     List<Object[]> getInfoOneUser(@Param("id") Integer id);
+    Optional<User> findById(Long id);
+    
 }
