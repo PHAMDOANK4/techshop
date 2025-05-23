@@ -7,7 +7,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.example.techstore.dto.reponse.RevenueResponse;
 import com.example.techstore.entity.Orders;
 import java.util.List;
 
